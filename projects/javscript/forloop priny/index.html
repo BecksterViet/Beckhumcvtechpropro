@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!--text haha fortnite-->
+        <h1 >placeholder laol im so crazy good at roblox piantball</h1>
+        <p id = "demo"></p>
+    </body>
+    <footer>
+        <script>
+            //variables
+            var x = prompt("Enter a value for starting value", "0");
+            var y = prompt("Enter a value for maximum value", "0");
+            var z = prompt("Enter a value for increment value", "0");
+            
+            var starting = parseInt(x);
+            var maximum = parseInt(y);
+            var increment = parseInt(z);
+
+            var result = "";
+            //
+
+            //functions
+            for (var i = starting; i <= maximum; i += increment) {
+                result += i + "<br>";
+            }
+
+            //final thingy mabobby that prints out who knows what
+            document.getElementById("demo").innerHTML = result;
+        </script>
+    </footer>
+</html>

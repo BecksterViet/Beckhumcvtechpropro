@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <link rel = "stylesheet" href ="index.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th class = "class1">null</th>
+            <th class = "class2">null</th>
+            <th class = "class3">null</th>
+        </tr>
+    </table>
+</body>
+
+<footer>
+    <script>
+        //variables
+        var x = prompt("Enter your name", "NAME");
+        var y = prompt("Enter your last name", "NAME");
+        var z = prompt("Enter your phone #", "###-###-####");
+
+        //
+
+        
+        const changes = {
+            "class1": ""+ x,
+             "class2": ""+ y,
+            "class3": ""+ z
+        };
+
+        Object.keys(changes)
+         .forEach(key => document.querySelectorAll("table th."+key)
+        .forEach(th => th.textContent = changes[key]));
+</script>
+</footer>
+</html>

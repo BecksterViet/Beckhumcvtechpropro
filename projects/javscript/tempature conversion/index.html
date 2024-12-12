@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id = "resul"></p>
+    </body>
+    <footer>
+        <script>
+            //variables
+            var what = prompt("Enter type of conversion exactly as prompted", "C to F or F to C");
+            var x = prompt("Enter a value for conversion", "74, 42, 64, etc");
+
+            //converting string variable into a float variable
+            var value1 = parseFloat(x);
+
+            //
+
+            //functions
+            if(what == "C to F" | what == "c to f" ) {
+                //calculates the value when converted from celsius to fahrenheit
+                value1 = value1 * 9/5;
+                resultf = value1 + 32;
+                //prints finaal convertion
+                document.getElementById("resul").innerHTML = resultf;
+            } else if (what == "F to C" | what == "f to c") {
+                //calculates the value when converted from fahrenheit to celsuis
+                value1 = value1 -32 ;
+                resultc = value1 * 5/9 ;
+                //prints final conversion
+                document.getElementById("resul").innerHTML = resultc;  
+            } else { 
+                //fail safe
+                document.getElementById("resul").innerHTML = "values entered are not valid";
+            }
+        </script>
+    </footer>
+</html>
+
+

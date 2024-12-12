@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: green;
+    font-size: 4rem;
+}
+
+h2{
+    text-align: center;
+    color: red;
+    font-size: 2rem;
+}
+
+.reg {
+    text-align: center;
+    color: aqua;
+    font-size: 1rem;
+    background: rgb(240, 205, 208)
+}
+
+.blue {
+    text-align: center;
+    color: blue;
+    font-size: 1rem;
+    background-image: url("download.jfif");
+    
+}
+
+.gray {
+    text-align: center;
+    color: rgb(95, 95, 95);
+    font-size: 1rem;
+    background-image: url("images.jfif")
+}

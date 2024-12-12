@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id = "resul"></p>
+    </body>
+    <footer>
+        <script>
+            //variables
+            var x = prompt("Enter a Value", "0");
+            var y = prompt("Enter a Value", "0");
+
+            //converting string variables into intergers
+            var value1 = parseInt(x);
+            var value2 = parseInt(y);
+
+            //calculates the result value
+            var result = value1 ** value2;
+            //
+
+            //prints it out
+            document.getElementById("resul").innerHTML = result;
+        </script>
+    </footer>
+</html>
